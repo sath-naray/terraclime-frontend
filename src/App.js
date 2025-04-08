@@ -16,7 +16,7 @@ function App() {
                 <Route path='/forgot-password' element={<ForgotPassword />}/>
                 <Route path='/dashboard' element={<Dashboard />} />
                 <Route path='/profile' element={<Profile />}/>
-                <Route path="/reports" element={<Reports />} />
+                <Route path="/report" element={<Reports />} />
           </Routes>
        </BrowserRouter>
     </div>
