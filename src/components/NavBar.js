@@ -2,13 +2,17 @@ import React from 'react';
 import {Notification03Icon, UserSharingIcon, Megaphone01Icon} from 'hugeicons-react'
 function NavBar() {
   const currentPath = window.location.pathname;
-  const path = currentPath === "/dashboard";
   return (
       <div className="navbar dm-sans">
         <nav className="bg-white shadow-sm border">
                   <div className="flex flex-wrap items-center justify-between">
                   <div className="flex justify-start items-center ms-3">
-                      <div className="text-black">Overview</div>
+                      <div className="text-black">
+                          {currentPath==="/reports" && <div>Reports</div>}
+                          {currentPath==="/dashboard" && <div>Dashboard</div>}
+                          {currentPath==="/leaks" && <div>Leaks</div>}
+                          {currentPath==="/settings" && <div>Settings</div>}
+                      </div>
                   </div>
                   <div className="flex md:order-2">
                     <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">

@@ -37,7 +37,7 @@ function Login() {
                 <div className="flex justify-center items-center p-2"><img src={terraclimelogo} className="w-[280px]" alt=""/></div>
                 <div className="flex justify-center items-center">
                         <div className="w-[30%] pt-[10px]">
-                                <div className='bg-white shadow-xl rounded-xl pb-10'>
+                                <div className='bg-white shadow-xl rounded-xl pb-10 t'>
                                             <div className="">
                                                 <div className="text-2xl mt-[10px] font-bold pt-7">Welcome</div>
                                                 <div className="mt-10">
